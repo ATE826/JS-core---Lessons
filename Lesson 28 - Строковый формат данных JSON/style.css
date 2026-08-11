@@ -1,0 +1,15 @@
+#user-form-data,
+#user-json-data {
+  white-space: pre;
+}
+
+.mb-3 {
+  position: relative;
+}
+
+/*Наличие подстроки feedback в атрибутах class*/
+[class*="feedback"] {
+  position: absolute;
+  top: 4.1rem;
+  left: 0.5em;
+}
