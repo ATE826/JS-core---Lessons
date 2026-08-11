@@ -1,0 +1,37 @@
+header {
+  transition: all 0.4s;
+}
+
+.navbar-expand .navbar-nav .nav-link,
+.navbar-brand.nav-link {
+  color: white;
+  padding-inline: 20px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-expand .navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+.banner {
+  height: 700px;
+}
+
+.image {
+  height: 300px;
+  transition: all 0.4s;
+  transform: scale(0);
+}
+
+.image.animated {
+  transform: scale(1);
+}
+
+.btn-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

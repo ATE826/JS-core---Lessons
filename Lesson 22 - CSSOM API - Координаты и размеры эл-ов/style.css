@@ -1,0 +1,12 @@
+.text-wrapper {
+  border: 1px solid #eee;
+  position: relative;
+  padding: 20px 30px;
+}
+
+.text {
+  height: 200px;
+  overflow: auto;
+  padding: 20px;
+  border: 5px solid #eee;
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Lesson 21</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 21</h1>
+      <div class="row gap-5">
+        <div class="col-4 border p-4 bg-light">
+          <h2 class="mb-3 fs-3">Customer info</h2>
+          <form action="#" name="customer-form">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                placeholder="Enter your username..."
+              />
+            </div>
+            <div class="mb-3">
+              <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select name="country" id="country" class="form-select">
+                  <option value="usa" selected>USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="europe">Europe</option>
+                  <option value="japan">Japan</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="age"
+                id="age"
+              />
+              <label for="age" class="form-check-label">I'm over 18</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-4 border p-4 bg-light">
+          <h2 class="mb-3 fs-3">Product details</h2>
+          <form action="#" name="product">
+            <div class="mb-3">
+              <label class="form-label">Subscribe period</label>
+              <select name="period" id="period" class="form-select">
+                <option value="week">Week</option>
+                <option value="month" selected>1 Month</option>
+                <option value="half-year">6 Month</option>
+                <option value="year">Year</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Package type:</label>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="package"
+                  id="start"
+                  value="start"
+                />
+                <label for="start" class="form-check-label">Start</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="package"
+                  id="base"
+                  value="base"
+                  checked
+                />
+                <label for="base" class="form-check-label">Base</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="package"
+                  id="premium"
+                  value="premium"
+                />
+                <label for="premium" class="form-check-label">Premium</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="comment" class="form-label">Comment:</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="1"
+                class="form-control"
+              ></textarea>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.list-group {
+  height: 260px;
+}
+
+.list-group-item {
+  touch-action: none;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+}
+
+#slider {
+  height: 40px;
+}
+
+#mark {
+  height: 30px;
+  width: 30px;
+  touch-action: none;
+}
+
+#mark:hover {
+  cursor: pointer;
+}
