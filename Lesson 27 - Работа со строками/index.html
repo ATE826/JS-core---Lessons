@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 27</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 27</h1>
+      <div class="row">
+        <div class="col-4">
+          <form action="#" name="user-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-control" />
+              <div class="feedback"></div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
+              <div class="feedback"></div>
+            </div>
+            <div class="mb-3">
+              <label for="nick" class="form-label">Nick</label>
+              <input type="text" id="nick" name="nick" class="form-control" />
+              <div class="feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+        </div>
+        <div class="col-4 p-4"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
