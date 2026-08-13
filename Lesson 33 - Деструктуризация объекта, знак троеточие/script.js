@@ -41,7 +41,29 @@ const messages = [
 
 // Вызов ф-ции создания инф. сообщения
 alerts.append(createAlert());
+//-----------------------------------
+// Деструктуризация — это способ быстро достать значения из объекта или массива и положить их в отдельные переменные
+// Пример:
+const students = {
+  fname: "Anton",
+  age: 21,
+  city: "Moscow",
+};
 
+const { fname, age, city } = students;
+console.log(fname, age, city);
+
+const mess = {
+  type: "success",
+  color: "red",
+  destination: "form",
+};
+
+// Можно переименовать переменную и оставлять остаток
+const { type: typeCl, ...rest } = mess;
+console.log(typeCl, rest);
+
+//-----------------------------------
 // Деструктуризация объекта
 let text, typeClass, widthClass;
 ({ text, type: typeClass, widthClass } = messages[0]);
