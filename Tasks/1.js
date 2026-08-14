@@ -5,32 +5,29 @@
  */
 
 function compress(list) {
-  if (list.length === 0) {
+  if (list.legth == 0) {
     return "";
   }
-  // Сложность алгоритма O(n log n) из-за сортировки
-  const sortedList = list.sort((a, b) => a - b);
 
-  const result = [];
-  let start = sortedList[0];
+  const sortedList = [...list].sort((a, b) => a - b);
+  const answ = [];
+
+  let startEl = sortedList[0];
+
   for (let i = 1; i <= sortedList.length; i++) {
-    // Если нарушается последовательность чисел
+    // Если последовтельность не выполняется
     if (sortedList[i] !== sortedList[i - 1] + 1) {
-      // Если 1 символ
-      if (start === sortedList[i - 1]) {
-        result.push(`${sortedList[i - 1]}`);
+      // Если число
+      if (startEl === sortedList[i - 1]) {
+        answ.push(`${sortedList[i - 1]}`);
+      } else {
+        answ.push(`${startEl}-${sortedList[i - 1]}`);
       }
-      // Если диапазон
-      else {
-        result.push(`${start}-${sortedList[i - 1]}`);
-      }
-      start = sortedList[i];
+      startEl = sortedList[i];
     }
   }
 
-  // Объединяем эл-ты массива в строку через запятую
-  return result.join(",");
-  j;
+  return answ.join(",");
 }
 
 console.clear();

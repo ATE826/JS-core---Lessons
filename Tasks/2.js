@@ -19,7 +19,24 @@
 // 0ms    100ms    200ms
 
 function throttle(fn, delay, ctx) {
-  // code here
+  let timer = null;
+  let lastArgs = null;
+
+  return function (...restArgs) {
+    if (timer == null) {
+      fn.call(ctx, ...restArgs);
+      timer = setTimeout(() => {
+        timer = null;
+
+        if (lastArgs != null) {
+          fn.apply(ctx, lastArgs);
+          lastArgs = null;
+        }
+      }, delay);
+      return; // Первый вызов уже выполнен, поэтому не сохраняем его как отложенный
+    }
+    lastArgs = restArgs;
+  };
 }
 
 function test() {
@@ -47,3 +64,24 @@ function test() {
 }
 
 test();
+
+// let timer = null;
+//   let lastArg = null;
+
+//   return function (...restArgs) {
+//     if (timer == null) {
+//       fn.call(ctx, ...restArgs);
+//       timer = setTimeout(() => {
+//         timer = null;
+
+//         // Если во время ожидания были вызовы
+//         if (lastArg != null) {
+//           fn.apply(ctx, lastArg);
+//           lastArg = null;
+//         }
+//       }, delay);
+//       return;
+//     }
+
+//     lastArg = restArgs;
+//   };
