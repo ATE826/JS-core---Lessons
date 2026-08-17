@@ -15,6 +15,28 @@ promise1.then((message) => {
   console.log(message);
 });
 
+const nameme = "Антон";
+
+setTimeout(
+  (name) => {
+    console.log(name);
+  },
+  1000,
+  nameme,
+);
+
+// Промис
+
+// const promise = new Promise((resolve, reject) => {
+//   // асинхронный код
+
+//   if (успех) {
+//     resolve(результат);
+//   } else {
+//     reject(ошибка);
+//   }
+// });
+
 // function getPromise(value) {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
