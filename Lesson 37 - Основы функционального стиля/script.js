@@ -11,10 +11,10 @@ form.addEventListener("submit", formSubmitHandler);
 // Плохой стиль написания кода
 // function formSubmitHandler(event) {
 //   event.preventDefault();
-
+//
 //   const radius = +form.radius.value;
 //   alert.innerHTML = "";
-
+//
 //   const circleLength = 2 * PI * radius;
 //   const circleArea = PI * radius ** 2;
 //   const div1 = document.createElement("div");
