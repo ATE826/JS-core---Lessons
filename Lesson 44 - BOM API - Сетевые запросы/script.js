@@ -1,6 +1,6 @@
 "use strict";
 
-// Сайты тестовых серверов
+// Сайты тестовых данных с серверов
 // jsonplaceholder.typicode.com
 // dummyjson.com
 

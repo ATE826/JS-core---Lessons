@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Lesson 45</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 45</h1>
+      <div class="row">
+        <div class="col-5">
+          <table class="table" id="users-table">
+            <thead class="table-dark">
+              <th>ID</th>
+              <th>Username</th>
+              <th>Password</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-4">
+          <form action="#" class="border p-4 bg-light" name="auth-form">
+            <h2 class="fs-4 mb-4">Login</h2>
+            <input
+              type="text"
+              name="username"
+              class="form-control mb-2"
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              name="password"
+              class="form-control mb-3"
+              placeholder="Password"
+              autocomplete="on"
+            />
+            <button type="submit" class="btn btn-success mb-2">Send</button>
+            <button
+              type="button"
+              class="btn btn-primary mb-2"
+              name="get-current-user"
+            >
+              Get auth user
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning mb-2"
+              name="update-history"
+            >
+              Update history
+            </button>
+          </form>
+        </div>
+        <div class="col-3">
+          <div
+            class="alert alert-warning h-50 p-4"
+            id="auth-user-message"
+          ></div>
+          <div
+            class="alert alert-light h-50 p-4"
+            id="user-history-message"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="cookie.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
