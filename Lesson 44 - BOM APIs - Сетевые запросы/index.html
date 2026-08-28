@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Lesson 44</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 44</h1>
+      <div class="row mb-3 gap-5">
+        <div class="col-5">
+          <h2 class="fs-3 mb-3 text-decoration-underline">USER LIST 1</h2>
+          <table class="table" id="table1">
+            <thead class="table-light">
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>City</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-5">
+          <h2 class="fs-3 mb-3 text-decoration-underline">USER LIST 2</h2>
+          <table class="table" id="table2">
+            <thead class="table-light">
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>City</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mb-3 gap-5">
+        <div class="col-4">
+          <h2 class="fs-3 mb-3 text-decoration-underline">Comment</h2>
+          <form action="#" name="comment-form">
+            <div class="mb-3">
+              <!-- id — уникальный идентификатор для CSS/JS/label.
+               name — имя поля для отправки данных на сервер, может повторяться (например, у radio-кнопок) -->
+              <label for="post-id" class="form-label">Post ID:</label>
+              <select name="postId" id="post-id" class="form-select">
+                <option value="" disabled selected>Select post</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                name="xhr"
+                id="xhr"
+                class="form-check-input"
+              />
+              <label for="xhr" class="form-check-label">XMLHttpRequest</label>
+            </div>
+            <div class="mb-3">
+              <label for="body" class="form-label">Comment:</label>
+              <textarea
+                name="body"
+                id="body"
+                class="form-control"
+                rows="3"
+              ></textarea>
+              <button type="submit" class="btn btn-success mt-3">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-4">
+          <h2 class="fs-3 mb-3 text-decoration-underline">Result</h2>
+          <div class="alert alert-light h-75"><pre></pre></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
