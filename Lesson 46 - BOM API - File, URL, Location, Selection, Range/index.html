@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Lesson 46</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 46</h1>
+      <div class="row mb-4 gap-2">
+        <div class="col-4">
+          <form
+            action="#"
+            class="border p-4 bg-light"
+            name="product-form"
+            enctype="multipart/form-data"
+          >
+            <h2 class="fs-4 text-capitilize mb-4">Product properties</h2>
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" name="title" id="title" />
+            </div>
+            <div class="mb-3">
+              <label for="color" class="form-label">Color</label>
+              <input type="text" class="form-control" name="color" id="color" />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input
+                type="number"
+                class="form-control"
+                name="price"
+                id="price"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="qty" class="form-label">Qty</label>
+              <input type="number" class="form-control" name="qty" id="qty" />
+            </div>
+            <div class="mb-3">
+              <label for="image" class="form-label"></label>
+              <input type="file" class="form-control" name="image" id="image" />
+            </div>
+            <div class="pt-4">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="button" class="btn btn-danger" name="get-qp">
+                Get query params
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-3">
+          <div class="bg-warning-subtle h-100 p-4">
+            <h2 class="fs-4 text-capitalize mb-4">File properties</h2>
+            <img
+              src="https://placehold.jp/200x200.png"
+              alt="img"
+              id="image-preview"
+              class="object-fit-cover w-100 mb-3"
+              style="height: 200px"
+            />
+            <div id="image-info"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="bg-success-subtle h-100 p-4">
+            <h2 class="fs-4 text-capitalize mb-4">Query parametres</h2>
+            <div id="qp-info"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4 gap-2">
+        <div class="col-6">
+          <h2 class="fs-4 text-capitalize mb-4">Selection example</h2>
+          <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            suscipit autem praesentium doloremque numquam, culpa delectus
+            aspernatur! Autem, nobis? Quidem aspernatur sit quis molestiae
+            delectus odio id magnam, fugit veniam.
+          </p>
+          <button type="button" class="btn btn-primary mt-2">To Google</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
