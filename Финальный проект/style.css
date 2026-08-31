@@ -1,0 +1,22 @@
+form .mb-3 {
+  position: relative;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  position: absolute;
+  bottom: -1.3em;
+}
+
+.deleted {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.table > :not(caption) > .edited > * {
+  background-color: #eee;
+}
+
+.table thead {
+  cursor: pointer;
+}

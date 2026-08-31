@@ -5,7 +5,9 @@ https://youtube.com/playlist?list=PLvcCyIZOok9JiXExkbCTGTduUXtrkorkS&si=rm2NLM25
 
 === ССЫЛКИ НА ОБУЧАЮЩИЕ РЕСУРСЫ ===
 https://learn.javascript.ru
+https://freecodecamp.org
 
 === ССЫЛКИ НА САЙТЫ С ТЕСТОВЫМИ ДАННЫМИ ===
 https://jsonplaceholder.typicode.com
 https://dummyjson.com
+https://jsonplaceholder.typicode.com
